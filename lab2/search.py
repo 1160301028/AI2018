@@ -187,7 +187,7 @@ def nullHeuristic(state, problem=None):
 
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
-    from sets import Set
+    # from sets import Set
     fringe = util.PriorityQueue()
     actions = []
     fringe.push((problem.getStartState(),actions),0)
